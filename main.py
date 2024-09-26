@@ -13,15 +13,15 @@
 В выходной файл OUTPUT.TXT нужно вывести единственное число – вес необходимого для обработки сульфида тория в нанограммах.'''
 input_data = open('input.txt','r')
 data = input_data.read()
-print(data)
+data = data.split()
 # смначала разбить строку на 3 числа. + сделать преобразование типов из str в int
-
-"""output_data = open('output.txt','w')
+a = int(data[0])
+b = int(data[1])
+c = int(data[2])
+out = a * b * c * 2
+output_data = open('output.txt','w')
 #перемножить 3 числа и умн их на 2
 
-output_data.write(data)
-
-
-
-output_data.close()"""
+output_data.write(str(out))
+output_data.close()
 input_data.close()
